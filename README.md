@@ -1,5 +1,5 @@
 ## Taller_Vallarta
-Desarrollador web Francisco melchor gomez 
+Desarrollador web Francisco melchor gomez  y griselda perez torres
 
 Creación de modulo para guardar, editar, borrar y listar de una tabla 
 
