@@ -12,7 +12,7 @@
             <img style="width: 500px;height: 500px;" src="<c:url value="boostrap/img/logo.png"/>" alt="">
         </div>
         <div class="col-lg-6">
-             <img style="width: 500px;height: 500px;" src="<c:url value="boostrap/img/imagen-udg.jpg"/>" alt="">
+             <img style="width: 450px;height: 500px;" src="<c:url value="boostrap/img/imagen-udg.jpg"/>" alt="">
         </div>
     </div>
 </div>
