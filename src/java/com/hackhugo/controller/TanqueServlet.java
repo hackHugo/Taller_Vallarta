@@ -12,7 +12,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import com.hackhugo.Dao.UserDao;
+import com.hackhugo.Dao.TanqueDao;
 import com.hackhugo.model.tanque;
 import javax.servlet.http.HttpSession;
 
@@ -20,9 +20,9 @@ import javax.servlet.http.HttpSession;
  *
  * @author hackhugo
  */
-public class UserServlet extends HttpServlet {
+public class TanqueServlet extends HttpServlet {
 
-    private UserDao dao;
+    private TanqueDao dao;
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -33,9 +33,9 @@ public class UserServlet extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    public UserServlet() {
+    public TanqueServlet() {
         super();
-        dao = new UserDao();
+        dao = new TanqueDao();
     }
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)

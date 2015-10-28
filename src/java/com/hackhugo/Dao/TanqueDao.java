@@ -14,11 +14,11 @@ import java.util.*;
 import com.hackhugo.model.tanque;
 import com.hackhugo.util.Conexion;
 
-public class UserDao {
+public class TanqueDao {
 
     private Connection connection;
 
-    public UserDao() {
+    public TanqueDao() {
         super();
         connection = Conexion.getConexion();
     }
