@@ -75,23 +75,23 @@ public class TanqueDao {
     }
 
     public tanque getUserById(String userId) {
-        tanque user = new tanque();
+        tanque objtanque = new tanque();
         try {
             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM `tanque` WHERE `Id_tanque`=?");
             preparedStatement.setString(1, userId);
             ResultSet rs = preparedStatement.executeQuery();
 
             if (rs.next()) {
-                user.setId_tanque(rs.getInt("Id_tanque"));
-                user.setNombre_tanque(rs.getString("Nombre_tanque"));
-                user.setColor(rs.getString("Color"));
-                user.setVolumen(rs.getDouble("Volumen"));
+                objtanque.setId_tanque(rs.getInt("Id_tanque"));
+                objtanque.setNombre_tanque(rs.getString("Nombre_tanque"));
+                objtanque.setColor(rs.getString("Color"));
+                objtanque.setVolumen(rs.getDouble("Volumen"));
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
-        return user;
+        return objtanque;
     }
 
     public void deleteTanque(Integer tanqueid) {

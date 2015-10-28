@@ -12,7 +12,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-default">
-                <div class="panel-heading">Modulo Tanque</div>
+                <div class="panel-heading">Módulo Tanque</div>
                 <div class="panel-body">
                     <%if (session.getAttribute("exito") != null) {%>
                     <div class="alert alert-success alert-dismissable">
